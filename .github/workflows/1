@@ -1,0 +1,31 @@
+name: Update README with latest blog posts
+
+on:
+  schedule: # Run workflow automatically
+    - cron: "15 8-11 */2  *  *" # Runs every hour, on the hour
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+  push:
+jobs:
+  update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # - name: Set up Git
+      #   run: |
+      #     git config --global user.name "kubbot"
+      #     git config --global user.email "3293172751ysy@gmail.com"
+
+      # 运行一系列 shell 命令，配置本地 Git 设置，从远程库拉取最新版本并推送到远程库。
+      - name: Auto green
+        run: |
+          git config --local user.email "3293172751ysy@gmail.com"
+          git config --local user.name "kubbot"
+          git remote set-url origin https://${{ secrets.BOT_GITHUB_TOKEN }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git pull --rebase
+          # 将 UTC 时间转换为上海时间
+          local_time=$(date -u -d "$(date -u)" "+%Y-%m-%d %H:%M:%S" -d "8 hours")
+          # 允许空提交，-a 省略git add . 而且设置签名
+          git commit --allow-empty -a -s -m "🌟 You never lose, either you win or you learn! 💪"
+          git push
