@@ -27,5 +27,5 @@ jobs:
           # 将 UTC 时间转换为上海时间
           local_time=$(date -u -d "$(date -u)" "+%Y-%m-%d %H:%M:%S" -d "8 hours")
           # 允许空提交，-a 省略git add . 而且设置签名
-          git commit --allow-empty -a -s -m "🌟 You never lose, either you win or you learn! 💪"
+          git commit --allow-empty -a -s -m "🌟 SoraEase makes it easier for Sora developers to develop Sora AI 💪"
           git push
