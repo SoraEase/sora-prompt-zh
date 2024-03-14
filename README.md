@@ -1,5 +1,10 @@
 # sora-prompt-zh
 
+<p align="center">
+    <a href="https://github.com/SoraEase/sora-prompt/blob/main/README.md"><b>English</b></a> •
+    <a href="https://github.com/SoraEase/sora-prompt-zh/blob/main/README.md"><b>中文</b></a>
+</p>
+
 Sora 中文的提示词 | 调教指南。各种场景使用指南。学习怎么让它听你的话。兼顾了 Sora 的多场景应用。
 
 [Sora | 索拉](https://openai.com/sora) 是一个AI模型，可以从OpenAI的文本指令中创建逼真和富有想象力的场景。OpenAI正在教AI理解和模拟运动中的物理世界，目标是训练模型，帮助人们解决需要现实世界交互的问题。
