@@ -4,6 +4,8 @@ Sora 中文的提示词 | 调教指南。各种场景使用指南。学习怎么
 
 [Sora | 索拉](https://openai.com/sora) 是一个AI模型，可以从OpenAI的文本指令中创建逼真和富有想象力的场景。OpenAI正在教AI理解和模拟运动中的物理世界，目标是训练模型，帮助人们解决需要现实世界交互的问题。
 
+如果你是 sora 的学习者，希望获取到 sora 的最新的咨询和相关的开发项目，以及 sora 相关的开源项目，这里 [awesome-sora](https://github.com/awesome-sora/awesome-sora-zh) 提供了 sora 相关的Sora 中文指南，指令指南，应用开发指南，精选资源清单，Sora 开发者精选工具框架。
+
 **索拉可提供以下功能：**
 
 + 文本到视频
